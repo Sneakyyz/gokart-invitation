@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Go-Kart Grand Prix Invitation</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="intro-screen">
+
+    <div class="lights" id="lights">
+        <span>⚫</span>
+        <span>⚫</span>
+        <span>⚫</span>
+        <span>⚫</span>
+        <span>⚫</span>
+    </div>
+
+    <h1 id="countdown-number">5</h1>
+    <p class="tap-note">Tap anywhere to start</p>
+
+</div>
+
+<main id="main-content">
+
+    <section class="hero">
+        <h1 class="main-title">🏁 GO-KART GRAND PRIX</h1>
+        <h2 class="friend-name">Trecia Eunice Agna</h2>
+
+        <p class="challenge-text">
+            I challenge you to a Go-Kart race.<br>
+            Let’s see who is faster 🏎️
+        </p>
+    </section>
+
+    <section class="details">
+        <div class="card">📅 June 09, 2026</div>
+        <div class="card">⏰ 12:00 PM</div>
+        <div class="card">📍 Festival Mall</div>
+    </section>
+
+    <section class="countdown-section">
+        <h2>Race Starts In</h2>
+
+        <div class="countdown">
+            <div><span id="days">00</span><p>Days</p></div>
+            <div><span id="hours">00</span><p>Hours</p></div>
+            <div><span id="minutes">00</span><p>Minutes</p></div>
+            <div><span id="seconds">00</span><p>Seconds</p></div>
+        </div>
+    </section>
+
+    <section class="action">
+        <button id="accept-btn">🏁 Accept Challenge</button>
+    </section>
+
+    <section id="accepted-message">
+        <h2>🏆 Challenge Accepted!</h2>
+        <p>See you on the track.</p>
+    </section>
+
+    <section class="trash">
+        <div id="talk-box">Let's race 🏎️</div>
+    </section>
+
+    <section class="end">
+        <h2>🏁 See You On The Track!</h2>
+    </section>
+
+</main>
+
+<canvas id="confetti"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>

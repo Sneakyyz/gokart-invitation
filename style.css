@@ -1,0 +1,132 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Orbitron", sans-serif;
+}
+
+body {
+background: #050505;
+color: white;
+text-align: center;
+overflow-x: hidden;
+}
+
+#intro-screen {
+position: fixed;
+inset: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: black;
+z-index: 9999;
+}
+
+.lights {
+display: flex;
+gap: 8px;
+margin-bottom: 20px;
+}
+
+.lights span {
+font-size: 2rem;
+transition: 0.2s;
+}
+
+#countdown-number {
+font-size: clamp(3rem, 10vw, 5rem);
+color: red;
+}
+
+.hero {
+padding: 40px 20px;
+}
+
+.main-title {
+font-size: clamp(1.8rem, 5vw, 2.5rem);
+color: red;
+}
+
+.friend-name {
+color: #ff4d4d;
+margin-top: 10px;
+}
+
+.challenge-text {
+margin-top: 15px;
+opacity: 0.9;
+}
+
+.details {
+display: flex;
+justify-content: center;
+gap: 10px;
+flex-wrap: wrap;
+padding: 20px;
+}
+
+.card {
+background: rgba(255,255,255,0.08);
+padding: 15px;
+border-radius: 10px;
+min-width: 120px;
+}
+
+.countdown {
+display: flex;
+justify-content: center;
+gap: 10px;
+flex-wrap: wrap;
+}
+
+.countdown div {
+background: rgba(255,255,255,0.08);
+padding: 15px;
+border-radius: 10px;
+min-width: 80px;
+}
+
+.countdown span {
+font-size: 2rem;
+color: red;
+}
+
+.countdown-section {
+margin-top: 40px;
+}
+
+.action {
+margin-top: 40px;
+}
+
+#accept-btn {
+padding: 15px 25px;
+border: none;
+border-radius: 999px;
+background: red;
+color: white;
+width: 90%;
+max-width: 300px;
+}
+
+#accepted-message {
+display: none;
+padding: 30px;
+color: gold;
+}
+
+.trash {
+padding: 20px;
+opacity: 0.8;
+}
+
+.end {
+padding: 40px 20px;
+}
+
+#confetti {
+position: fixed;
+inset: 0;
+pointer-events: none;
+}
